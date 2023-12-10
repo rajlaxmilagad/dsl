@@ -1,0 +1,12 @@
+net_amount=0
+n=int(input("enter the number of transaction"))
+for i in range(0,n):
+     transaction_str=input("enter transaction:")
+     transaction=transaction_str.split()
+     type=transaction[0]
+     amount=int(transaction[1])
+     if type=='d':
+        net_amount=net_amount+amount
+     if type=='w':
+        net_amount=net_amount-amount
+     print("net_amount",net_amount)
